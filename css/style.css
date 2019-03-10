@@ -1,18 +1,31 @@
-/* Main Menu */
+/* General */
+
+
+/* Menu & Header */
 
 .menu-container {
-  border: 1px solid green;
-  margin: 2% auto;
-  width: 100%;
-  height: 7vh;
+  /*border: 1px solid green;*/
+  /*margin: 2% auto;*/
+  /*width: 100%;*/
+  /*height: 7vh;*/
   display: flex;
   justify-content: center;
 }
 
-nav a {
+.menu-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-container button {
+  margin: 2% 1%;
+}
+
+/*nav a {
   margin: 0 .3vw;
   padding: 10px 30px;
-  border: 1px solid rgba(5,5,5,1);
+  border: 1px solid rgba(5,5,5,.1);
+  border-radius: 7%;
   text-decoration: none;
   color: #fff;
   background-color: rgba(1,1,1,.6);
@@ -22,4 +35,15 @@ a:hover {
   text-decoration: none;
   color: #fff;
   background-color: rgba(23,34,23,.5);
+  border: 1px solid white;
+}*/
+
+.header {
+  width: 100%;
+  height: 95vh;
+  background: url("../img/jakob-owens-212558-unsplash.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }

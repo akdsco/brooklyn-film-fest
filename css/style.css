@@ -60,16 +60,18 @@ h2 {
 
 .films {
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-color: rgba(50,43,23,.1);
   background-size: cover;
 }
 
 .films .row .col-4 img {
-  height: 100px;
-  width: 150px;
+  padding: 10px;
+  height: 200px;
+  width: 300px;
 }
 
-.films .container .row {
-  padding: 1% auto;
+.row .films {
+  padding-top: 5%;
+  padding-bottom: 3%;
 }

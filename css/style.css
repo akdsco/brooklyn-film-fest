@@ -19,29 +19,15 @@ a:hover {
 /* About */
 
 .about {
-  margin: 4% auto;
+  margin: 8% auto 6% auto;
 }
 
 /* Films */
 
 .films {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(50,43,23,.1);
-  /*background: url("../img/bg_pat.jpg");*/
-  /*background-size: cover;*/
-  /*background-blend-mode: */
-}
-
-.films .row .col-md-5 img {
-  padding: 10px;
-  height: 225px;
-  width: 400px;
-}
-
-.row .films {
   padding-top: 5%;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
+  background: rgba(50,43,23,.1);
 }
 
 /* ---- Schedule ---- */

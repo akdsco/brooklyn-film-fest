@@ -1,10 +1,10 @@
 /* General */
 a {
-  color: white;
+  /*color: white;*/
 }
 
 a:hover {
-  color: white;
+  /*color: white;*/
   text-decoration: none;
 }
 
@@ -14,6 +14,8 @@ h2 {
 
 /* Menu & Header */
 
+
+/*
 .menu-container {
   display: flex;
   justify-content: center;
@@ -26,18 +28,19 @@ h2 {
 
 .menu-container button {
   margin: 2% 1%;
-}
+}*/
 
-.header {
+.main {
+  color: white;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   background: url("../img/jakob-owens-212558-unsplash.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; 
 }
-
+/*
 .header .col-md-8 {
   margin-top: 15%;
   color: white;
@@ -53,7 +56,7 @@ h2 {
 
 .header .col-md-8 button {
   margin-top: 20px;
-}
+}*/
 
 /* About */
 
@@ -96,7 +99,7 @@ h2 {
   box-sizing: border-box;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The vertical ruler) */
 .timeline {
   position: relative;
   padding: 100px;
@@ -104,7 +107,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The vertical ruler */
 .timeline::after {
   content: '';
   position: absolute;

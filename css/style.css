@@ -1,74 +1,25 @@
 /* General */
-a {
-  /*color: white;*/
-}
 
 a:hover {
-  /*color: white;*/
   text-decoration: none;
-}
-
-h2 {
-  font-size: 3em;
 }
 
 /* Menu & Header */
 
-
-/*
-.menu-container {
-  display: flex;
-  justify-content: center;
-}
-
-.menu-container a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu-container button {
-  margin: 2% 1%;
-}*/
-
 .main {
   color: white;
-  width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: url("../img/jakob-owens-212558-unsplash.jpg");
   background-position: top;
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-repeat: no-repeat; 
 }
-/*
-.header .col-md-8 {
-  margin-top: 15%;
-  color: white;
-}
-
-.header .col-md-8 h1 {
-  font-size: 4em;
-}
-
-.header .col-md-8 h5 {
-  font-size: 2em;
-}
-
-.header .col-md-8 button {
-  margin-top: 20px;
-}*/
 
 /* About */
 
-#about {
-  margin: 3% auto;
-  text-align: center;
-  padding: 20px;
-  /*background-color: white;*/
-}
-
-#about h2 {
-  padding-bottom: 2%;  
+.about {
+  margin: 4% auto;
 }
 
 /* Films */

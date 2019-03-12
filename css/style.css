@@ -54,6 +54,24 @@ a:hover {
   background-attachment: fixed;
 }
 
+/* ---- Footer ---- */
+
+.footer {
+  padding-top: 10%;
+  padding-bottom: 6%;
+  background: rgba(2,32,21,.2);
+}
+
 .footer a {
-  color: blue;
+  color: black;
+}
+
+.footer a:hover {
+  color: grey;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

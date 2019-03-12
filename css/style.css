@@ -1,4 +1,4 @@
-/* General */
+/* ---- General ---- */
 
 a {
   color: white;
@@ -9,7 +9,15 @@ a:hover {
   color: white;
 }
 
-/* Menu & Header */
+/* ---- Menu & Header ---- */
+
+.header a {
+  color: black;
+}
+
+.navbar-light {
+  background-color: white;
+}
 
 .main {
   color: white;
@@ -21,30 +29,38 @@ a:hover {
   background-repeat: no-repeat; 
 }
 
-/* About */
+/* ---- About ---- */
 
 .about {
   margin: 8% auto 6% auto;
 }
 
-/* Films */
+/* ---- Films ---- */
 
 .films {
   padding-top: 5%;
   padding-bottom: 8%;
-  background: rgba(50,43,23,.1);
+  background: rgba(211,211,211,.4);
 }
 
-/* ---- News Section ---- */
+/* ---- News ---- */
 
 .news {
   padding-top: 4%;
   padding-bottom: 5%;
 }
 
-/* ---- Sign up ---- */
+/* ---- Reserve Ticket Section ---- */
 
-.signup {
+.reserve-section {
+  background: rgba(211,211,211,.4);
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+/* ---- Call To Action ---- */
+
+.call-to-action {
   color: white;
   padding-top: 17%;
   padding-bottom: 12%;
@@ -59,7 +75,7 @@ a:hover {
 .footer {
   padding-top: 10%;
   padding-bottom: 6%;
-  background: rgba(2,32,21,.2);
+  background: rgba(211,211,211,.4);
 }
 
 .footer a {

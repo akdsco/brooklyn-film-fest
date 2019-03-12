@@ -25,13 +25,27 @@
     <div class="header">
       <div class="row">
         <div class="col-sm">
-          <nav class="navbar fixed-top justify-content-center bg-light">
-            <a class="navbar-brand mr-1" href="#page-top"><img src="img/logo.png" width="114" height="56" alt=""></a>
-            <a class="nav-link mr-1" href="#about">About</a>
-            <a class="nav-link mr-1" href="#films">Films</a>
-            <a class="nav-link mr-1" href="#schedule">Schedule</a>
-            <a class="nav-link mr-1" href="#news">News</a>
-            <a class="nav-link" href="#reserve">Reserve Ticket</a>
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a href="#page-top"><img src="img/logo.png" width="114" height="56" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggler" aria-controls="menuToggler" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="menuToggler">
+              <div class="col-sm-8"></div>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#films">Films</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reserve">Reserve Ticket</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
@@ -50,7 +64,7 @@
     </div>
   </div>
   
-  <!-- About -->
+  <!-- About Section -->
 
   <div class="container">
     <div class="row" id="about">
@@ -64,7 +78,7 @@
     </div>
   </div>
 
-  <!-- Films -->
+  <!-- Films Section-->
   <div class="container-fluid films">
     <div class="row mb-5" id="films">
       <div class="col-sm">
@@ -120,6 +134,7 @@
     </div>
   </div>
 
+  <!-- News Section -->
   <div class="container news">
     <div class="row" id="news">
       <div class="col-sm mb-3 ">
@@ -137,10 +152,35 @@
       </div>
     </div>
   </div>
+
+  <!-- Reserve Ticket Section -->
+
+  <div class="container-fluid reserve-section">
+    <div class="row" id="reserve">
+      <div class="col-sm">
+        <h2>Regiser Your Interest</h2>
+        <h5>Fill in form below</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        </form>
+        <p>Full Name</p>
+        <p>E-mail Address</p>
+        <p>Choose Data List</p>
+        <p>Submit Button</p>
+      </div>
+    </div>
+  </div>
   
-  <!-- Sign Up -->
-  <div class="container-fluid signup">
-    <div class="row justify-content-center" id="signup">
+  <!-- Call to Action -->
+  <div class="container-fluid call-to-action">
+    <div class="row justify-content-center" id="call-to-action">
       <div class="col-sm-4">
         <h2 class="text-center">Register now</h2>
         <h5 class="text-center">We can't wait to meet you.</h5>

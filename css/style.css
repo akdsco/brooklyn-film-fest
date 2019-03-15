@@ -55,7 +55,7 @@ a:hover {
 
 /* ---- Reserve Ticket Section ---- */
 
-.reserve-section {
+.reserve-tickets {
   background: rgba(211,211,211,.4);
   padding-top: 4%;
   padding-bottom: 6%;
@@ -74,6 +74,12 @@ a:hover {
 }
 
 /* ---- Footer ---- */
+
+/*@media screen and (min-width: 992px) {
+  .footer .row:first-child; {
+    justify-content: flex-center!important;
+  }
+}*/
 
 .footer {
   padding-top: 10%;

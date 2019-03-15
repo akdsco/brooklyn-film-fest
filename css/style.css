@@ -11,10 +11,6 @@ a:hover {
 
 /* ---- Menu & Header ---- */
 
-.header a {
-  color: black;
-}
-
 .navbar-light {
   background-color: white;
 }
@@ -26,7 +22,7 @@ a:hover {
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 /* ---- About ---- */
@@ -38,7 +34,7 @@ a:hover {
 /* ---- Films ---- */
 
 .films {
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 8%;
   background: rgba(211,211,211,.4);
 }
@@ -49,10 +45,13 @@ a:hover {
 	height: 300px;
 }*/
 
-.news {
+.carousel {
+
+}
+/*.news {
   padding-top: 4%;
   padding-bottom: 5%;
-}
+}*/
 
 /* ---- Reserve Ticket Section ---- */
 

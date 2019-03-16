@@ -45,9 +45,28 @@
         // when done, add hash to url
         // (default click behaviour)
         window.location.hash = this.hash;
-      });
-    });
+        });
+       });
 
+        // Custom JavaScript to validate form
+
+       (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })(); 
       });      
     </script>
   </head>
@@ -170,28 +189,31 @@
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>We will display a fifth movie.</h1>
+              <p>20-02-2019</p>
+              <p>An unusual surpise is coming for our film fans. We are in the process of selecting additional movie for our 2019 lineup. There are couple of posibilities and they all are amazing movies to watch. Stay tuned as we will disclose more information as soon as it will become available through our e-mail newsletter.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#666"></rect></svg>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>We love to celebrate films.</h1>
+              <p>15-01-2019</p>
+              <p>We are throwing a party before our festival to tune ourselves in the festive mood. Join us at our regular club in Miami, where both, inclusive service and the best music in town, will prepare you for the festive nights to come.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#555"></rect></svg>
           <div class="container">
             <div class="carousel-caption text-right">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>We bring on the night show.</h1>
+              <p>28-02-2019</p>
+              <p>One of our screenings will be preceded with a short fire performance. A mysterious group from Marakech will ignite our passions and desires before the first screenings. Don't forget that first drinks are on us. Cheers to the best Festival in the world!. If you're curious, explore photos from our previous events and see for yourself.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
@@ -208,8 +230,7 @@
     </div>
   </div>
 
-  <!-- TODO: Form validation?
-             Make form working?
+  <!-- TODO: Make form working? Sending e-mail with confirmation and adjusting number of people ?
    -->
 
   <!-- Reserve Ticket Section -->
@@ -218,11 +239,11 @@
     <div class="row justify-content-center">
       <div class="col-md-6  text-center">
         <h2>Book Your Tickets</h2>
-        <h5 class="mt-3 mb-1">We can't wait to display our best movies in 2019. If you'd like to join us, book your tickets by filling* in  simple form below.</h5>
+        <h5 class="mt-3 mb-1">We can't wait to display our best movies. If you'd like to join us, book your tickets by filling* in  simple form below.</h5>
         <p class="mb-4">*all fields are required</p>
       </div>
     </div>
-    <form>
+    <form class="needs-validation" novalidate>
       <div class="row justify-content-center">
         <div class="col-10 col-md-8 col-lg-4">
           <label for="inputName">Full Name:</label>
@@ -237,6 +258,9 @@
           <div class="form-group">
             <label for="inputEmail">Email Address:</label>
             <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+            <div class="invalid-feedback">
+              Please provide valid e-mail address
+            </div>
           </div>
         </div>
       </div>
@@ -326,7 +350,6 @@
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
   </body>

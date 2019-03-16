@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-
     <link href="css/style.css" rel="stylesheet">
-
+    
     <title>Brooklyn Outdoor Film Festival</title>
   </head>
 
@@ -22,9 +21,10 @@
 
 
     <!-- TODO: move whole website down as much as header takes place so it does not obscure sections etc, think minus margin for the body? -->
+    <!-- TODO: Check how hard is to implement smooth site scroller, JavaScript? -->
 
   <!-- Menu & Header -->
-  <div class="container-fluidh header">
+  <div class="container-fluid header">
     <div class="row">
       <div class="col">
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
@@ -95,8 +95,6 @@
         <p>Description of the film below Description of the film below Description of the film belowDescription of the film below Description of the film below Description of the film below Description of the film below Description of the film below Description of the film below Description of the film belowDescription of the film below Descrhe film below Description of the film below Description of the film belowDescription of the film below Description of the film below Description of the film</p>
       </div>
     </div>
-
-
     <div class="row my-4">
       <div class="col-md-5">
         <img class="img-fluid rounded mx-auto d-block" src="img/films/la-la-land.jpg"/>
@@ -106,7 +104,6 @@
         <p>Description of the film below Description of the film below Description of the film belowDescription of the film below Description of the film below Description of the film below Description of the film below</p>
       </div>
     </div>
-
     <div class="row my-4">
       <div class="col-md-5">
         <img class="img-fluid rounded mx-auto d-block" src="img/films/bohemian.jpg"/>        
@@ -116,7 +113,6 @@
         <p>Description of the film below Description of the film below Description of the film belowDescription of the film below Description of the film below Description of the film below Description of the film below</p>
       </div>
     </div>
-
     <div class="row my-4">
       <div class="col-md-5">
         <img class="img-fluid rounded mx-auto d-block" src="img/films/intouchables.jpg" />    
@@ -129,77 +125,59 @@
   </div>
 
   <!-- News Section -->
-
-<div class="news">
-  <div id="newsCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#newsCarousel" data-slide-to="1" class=""></li>
-      <li data-target="#newsCarousel" data-slide-to="2" class=""></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1>Example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+  <div class="news">
+    <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#newsCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#newsCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
 
-
-<!-- TODO: Fix this section -->
-
-  <!-- <div class="container news">
-    <div class="row" id="news">
-      <div class="col-sm mb-3 ">
-        <h2 class="text-center">News & Information</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm">
-        <h3 class="mb-4">We're relesing new tier of tickets</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta sem at justo gravida, at commodo leo molestie. Vivamus accumsan enim sit amet diam tincidunt tincidunt. Donec vel imperdiet urna, euismod blandit nisi. Maecenas commodo finibus mauris, vestibulum egestas massa finibus ac. Proin varius nisi elit. Praesent sed pulvinar sapien. Nunc purus nulla, commodo id orci sed, ullamcorper euismod orci. Pellentesque enim ante, suscipit sed enim sit amet, tempor dapibus neque.</p>        
-      </div>
-      <div class="col-sm">
-        <h3 class="mb-4">New films are scheduled for our festival</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta sem at justo gravida, at commodo leo molestie. Vivamus accumsan enim sit amet diam tincidunt tincidunt. Donec vel imperdiet urna, euismod blandit nisi. Maecenas commodo finibus mauris, vestibulum egestas massa finibus ac. Proin varius nisi elit. Praesent sed pulvinar sapien. Nunc purus nulla, commodo id orci sed, ullamcorper euismod orci. Pellentesque enim ante, suscipit sed enim sit amet, tempor dapibus neque.</p>        
-      </div>
-    </div>
-  </div > -->
+  <!-- TODO: Form validation?
+             Make form working?
+   -->
 
   <!-- Reserve Ticket Section -->
   <div class="container-fluid reserve-tickets" id="reserve-tickets">
@@ -212,9 +190,10 @@
     <form>
       <div class="row justify-content-center">
         <div class="col-10 col-md-8 col-lg-4">
-          <div class="form-group">
-            <label for="inputName">Full Name:</label>
-            <input type="name" class="form-control" id="inputName" placeholder="e.g. John Smith" required>
+          <label for="inputName">Full Name:</label>
+          <div class="form-group input-group">
+            <input type="name" aria-label="First Name" class="form-control" placeholder="Name" required>
+            <input type="surname" aria-label="Second Name" class="form-control" id="inputName" placeholder="Surname" required>
           </div>
         </div>
       </div>
@@ -309,9 +288,10 @@
   </div>
 
     <!-- Optional JavaScript -->
-
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

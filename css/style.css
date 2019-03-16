@@ -19,6 +19,10 @@ a:hover {
   background-color: white;
 }
 
+.nav-link.active {
+	color: #fff !important;
+}
+
 .main {
   color: white;
   height: 90vh;
@@ -95,12 +99,6 @@ a:hover {
 }
 
 /* ---- Footer ---- */
-
-/*@media screen and (min-width: 992px) {
-  .footer .row:first-child; {
-    justify-content: flex-center!important;
-  }
-}*/
 
 .footer {
   padding-top: 15vh;

@@ -13,21 +13,19 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    
+
     <title>Brooklyn Outdoor Film Festival</title>
   </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
 
-  <body id="page-top">
 
-
-    <!-- TODO: move whole website down as much as header takes place so it does not obscure sections etc, think minus margin for the body? -->
     <!-- TODO: Check how hard is to implement smooth site scroller, JavaScript? -->
 
   <!-- Menu & Header -->
   <div class="container-fluid header">
     <div class="row">
       <div class="col">
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="nav navbar navbar-expand-md navbar-light fixed-top" id="nav">
           <a href="#page-top"><img src="img/logo.png" width="114" height="56" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggler" aria-controls="menuToggler" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -64,10 +62,12 @@
   </div>
   
   <!-- About Section -->
-  <div class="container about" id="about">
+  <div id="about"></div>
+  <div class="container about">
     <div class="row">
       <div class="col">
         <h2 class="text-center mb-3">About Us</h2>
+        <h5 class="text-center my-2">Think of a good subheding to give information about what is this about sections</h5>
         <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, augue ut blandit ultrices, mi augue dapibus nibh, sed dignissim mi est ac purus. Fusce molestie semper sodales. Vestibulum dui neque, cursus laoreet risus ut, sodales ultrices sem. Sed felis nibh, ultrices vel facilisis consectetur, dignissim posuere ipsum. Nam fermentum nibh justo. Phasellus tempor pulvinar scelerisque. Mauris consectetur tempor lectus, quis fringilla mauris ornare a. Suspendisse ornare venenatis sem, quis semper ligula.
         </p>
         <p class="text-center">
@@ -77,11 +77,10 @@
   </div>
 
   <!-- Films Section-->
-  <!-- TO DO - write @media query to align h3 to left when on bigger screens -->
-  
-
-  <div class="container-fluid films px-5" id="films">
-    <div class="row my-5">
+  <div id="films"></div>
+  <!-- <div class="films-anchor" id="films"></div> -->
+  <div class="container-fluid films px-5">
+    <div class="row my-2">
       <div class="col">
         <h1 class="text-center">This year we will watch</h1>
       </div>
@@ -125,6 +124,7 @@
   </div>
 
   <!-- News Section -->
+  <div id="news"></div>
   <div class="news">
     <div id="newsCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -180,11 +180,13 @@
    -->
 
   <!-- Reserve Ticket Section -->
-  <div class="container-fluid reserve-tickets" id="reserve-tickets">
+  <div id="reserve-tickets"></div>
+  <div class="container-fluid reserve-tickets">
     <div class="row justify-content-center">
       <div class="col-md-6  text-center">
         <h2>Book Your Tickets</h2>
-        <h5 class="mt-3 mb-4">We can't wait to display our best movies in 2019. If you'd like to join us, book your tickets using simple form below.</h5>
+        <h5 class="mt-3 mb-1">We can't wait to display our best movies in 2019. If you'd like to join us, book your tickets by *filling in  simple form below.*</h5>
+        <p class="mb-4">*all fields are required</p>
       </div>
     </div>
     <form>
@@ -291,7 +293,6 @@
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

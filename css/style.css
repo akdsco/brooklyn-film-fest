@@ -1,6 +1,7 @@
 /* ---- General ---- */
 body {
   padding-top: 4.5rem;
+  position: relative;
 }
 
 a {
@@ -13,10 +14,6 @@ a:hover {
 }
 
 /* ---- Menu & Header ---- */
-
-/*.header {
-	height: 50px;
-}*/
 
 .navbar-light {
   background-color: white;
@@ -35,36 +32,62 @@ a:hover {
 /* ---- About ---- */
 
 .about {
-  margin: 8% auto 6% auto;
+  margin: 11vh auto 10vh auto;
 }
 
 /* ---- Films ---- */
 
 .films {
-  padding-top: 3%;
-  padding-bottom: 8%;
+  padding-top: 11vh;
+  padding-bottom: 10vh;
   background: rgba(211,211,211,.4);
+}
+
+@media (min-width: 768px) {
+	.films div.col-md-7 h3 {
+		text-align: left !important;
+	}
 }
 
 /* ---- News ---- */
 
-.news {
+@media (min-width: 768px) {
+
 }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
 
 /* ---- Reserve Ticket Section ---- */
 
 .reserve-tickets {
+  padding-top: 12vh;
+  padding-bottom: 10vh;
   background: rgba(211,211,211,.4);
-  padding-top: 4%;
-  padding-bottom: 6%;
 }
 
 /* ---- Call To Action ---- */
 
 .call-to-action {
   color: white;
-  padding-top: 17%;
-  padding-bottom: 12%;
+  padding-top: 30vh;
+  padding-bottom: 20vh;
   background: url("../img/karen-zhao-643916-unsplash.jpg");
   background-position: bottom;
   background-size: cover;
@@ -106,26 +129,6 @@ a:hover {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

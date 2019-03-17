@@ -1,10 +1,10 @@
 /* ---- General ---- */
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 body {
-  padding-top: 4.5rem;
+  padding-top: 9.4vh;
   position: relative;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -14,6 +14,37 @@ a {
 a:hover {
   text-decoration: none;
   color: white;
+}
+
+/* Styling primary button to fit with website colours */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #e48f10;
+}
+
+.btn-primary {
+	background-color: #F19A19;
+  border-color: #F19A19;
+}
+
+.btn-primary:hover {
+  background-color: #e48f10;
+  border-color: #ffc10726;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 146, 38, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #792f9a;
+  border-color: #77299a;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #77299aa1;
 }
 
 /* ---- Menu & Header ---- */
@@ -28,12 +59,13 @@ a:hover {
 
 .main {
   color: white;
-  height: 90vh;
+  height: 85vh;
   background: url("../img/jakob-owens-212558-unsplash.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-blend-mode: soft-light;
 }
 
 /* ---- About ---- */
@@ -51,7 +83,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-	.films div.col-md-7 h3 {
+	.films div.col-md-7 h3,.films div.col-md-7 h6 {
 		text-align: left !important;
 	}
 }
@@ -142,7 +174,7 @@ a:hover {
     line-height: 1.4;
   }
 
-  .featurette-heading {
+/*  .featurette-heading {
     font-size: 50px;
   }
 }
@@ -150,5 +182,5 @@ a:hover {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
-  }
+  }*/
 }

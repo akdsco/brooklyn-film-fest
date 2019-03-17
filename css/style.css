@@ -1,7 +1,10 @@
 /* ---- General ---- */
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 body {
   padding-top: 4.5rem;
   position: relative;
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -36,7 +39,7 @@ a:hover {
 /* ---- About ---- */
 
 .about {
-  margin: 11vh auto 10vh auto;
+  margin: 13vh auto 10vh auto;
 }
 
 /* ---- Films ---- */
@@ -103,7 +106,7 @@ a:hover {
 .footer {
   padding-top: 15vh;
   padding-bottom: 5vh;
-  background: rgba(211,211,211,.4);
+  background: rgba(255,255,255,1);
 }
 
 .footer a {

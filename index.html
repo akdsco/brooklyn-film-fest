@@ -26,11 +26,6 @@
 
         //  Testing and developing smooth scrolling for the menu anchors
 
-        $("button").click(function() {
-          $("#test").hide();
-        });
-
-
         $("#nav ul li a[href^='#']").on('click', function(e) {
 
         // var target = this.hash;
@@ -72,7 +67,10 @@
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
 
-    <!-- TODO: Check how hard is to implement smooth site scroller, JavaScript? -->
+  <!-- TODO: Implement smooth site scroller -->
+  <!-- TODO: Write copy for About US & Film descriptions -->
+  <!-- TODO: Add background photos for news -->
+  <!-- TODO: Read about submodules on github -->
 
   <!-- Menu & Header -->
   <div class="container-fluid header">
@@ -120,11 +118,12 @@
     <div class="row">
       <div class="col">
         <h2 class="text-center mb-3">About Us</h2>
-        <h5 class="text-center my-2">Think of a good subheding to give information about what is this about sections</h5>
-        <p class="text-center" id="test"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, augue ut blandit ultrices, mi augue dapibus nibh, sed dignissim mi est ac purus. Fusce molestie semper sodales. Vestibulum dui neque, cursus laoreet risus ut, sodales ultrices sem. Sed felis nibh, ultrices vel facilisis consectetur, dignissim posuere ipsum. Nam fermentum nibh justo. Phasellus tempor pulvinar scelerisque. Mauris consectetur tempor lectus, quis fringilla mauris ornare a. Suspendisse ornare venenatis sem, quis semper ligula.
+        <h5 class="text-center my-2">We display quality films and organise the best social events.</h5>
+        <p class="text-center" id="test">We are a group of 100 people who can't stop talking, living, breating and obviously watching films. Each year we celebrate with community of 15000 like minded people from Brooklyn and New York area, by displaying the best films and taking part in social activities together. Our events are mostly held in Venues around New York. 
         </p>
+        <h5 class="text-center my-2">We know how to celebrate well.</h5>
         <p class="text-center">
-        Curabitur sollicitudin consectetur libero et scelerisque. Mauris eleifend metus vitae sapien finibus porta. Pellentesque metus libero, mollis eget sem sed, consectetur varius felis. Mauris vel fringilla nisi. Suspendisse vitae urna leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum aliquam malesuada neque, vel tempor metus ornare placerat. In quis lectus massa. Phasellus euismod</p>
+        Each year we invite stars and celebrities to join us on the event. Sometimes we even convince them to perform live for us. Every screening evening has a warm up with all inclusive coctails and networking. We love to talk about anything but expect to hear lots about art, music and films. We became very well known in the industry for our give away boxes where you can find personalised presents with a touch of luxury.</p>
       </div>
     </div>
   </div>
@@ -240,8 +239,8 @@
     <div class="row justify-content-center">
       <div class="col-md-6  text-center">
         <h2>Book Your Tickets</h2>
-        <h5 class="mt-3 mb-1">We can't wait to display our best movies. If you'd like to join us, book your tickets by filling* in  simple form below.</h5>
-        <p class="mb-4">*all fields are required</p>
+        <h5 class="mt-3 mb-1">We can't wait to display our best movies. If you'd like to join us, book your tickets by filling in  simple form below.</h5>
+        <p class="mb-4">All fields are required.</p>
       </div>
     </div>
     <form class="needs-validation" novalidate>

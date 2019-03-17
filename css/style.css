@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 body {
+	/*Adjust website starting point due to fixed header*/
   padding-top: 9.4vh;
   position: relative;
   font-family: 'Work Sans', sans-serif;
@@ -16,7 +17,7 @@ a:hover {
   color: white;
 }
 
-/* Styling primary button to fit with website colours */
+/* Styling primary button to fit with website design and colours */
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
@@ -59,13 +60,26 @@ a:hover {
 
 .main {
   color: white;
-  height: 85vh;
+  height: 83vh;
   background: url("../img/jakob-owens-212558-unsplash.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-blend-mode: soft-light;
+}
+
+@media (max-width: 768px) {
+	.main h1 {
+		font-size: 3em;
+	}
+
+	.main h3 {
+		font-size: 1.5em;
+	}
+
+	.main h5 {
+		font-size: 1em;
+	}
 }
 
 /* ---- About ---- */
@@ -90,7 +104,12 @@ a:hover {
 
 /* ---- News ---- */
 
-@media (min-width: 768px) {
+.news img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
 
 }
 

@@ -17,6 +17,10 @@ a:hover {
   color: white;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
 /* Styling primary button to fit with website design and colours */
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {

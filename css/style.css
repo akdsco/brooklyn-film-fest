@@ -110,6 +110,12 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .carousel-item {
+    height: 55rem;
+  }
+  .carousel-item {
+    height: 55rem;
+  }
 
 }
 

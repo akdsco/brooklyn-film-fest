@@ -61,7 +61,7 @@ a:hover {
 .main {
   color: white;
   height: 83vh;
-  background: url("../img/jakob-owens-212558-unsplash.jpg");
+  background: url("../img/main-background.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -152,7 +152,7 @@ a:hover {
   color: white;
   padding-top: 30vh;
   padding-bottom: 20vh;
-  background: url("../img/karen-zhao-643916-unsplash.jpg");
+  background: url("../img/call-to-action-background.jpg");
   background-position: bottom;
   background-size: cover;
   background-attachment: fixed;

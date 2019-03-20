@@ -3,7 +3,7 @@
 
 body {
 	/*Adjust website starting point due to fixed header*/
-  padding-top: 9.4vh;
+  padding-top: 3.5rem;
   position: relative;
   font-family: 'Work Sans', sans-serif;
 }
@@ -64,7 +64,7 @@ h2 {
 
 .main {
   color: white;
-  height: 83vh;
+  height: 35rem;
   background: url("../img/main-background.jpg");
   background-position: top;
   background-size: cover;
@@ -91,17 +91,24 @@ h2 {
 	}
 }
 
+/* Adjusting Menu Header for smallest smartphones*/
+@media (max-width: 377px) {
+  #page-top > div.container-fluid.header > div > div > nav > span {
+    display: none;
+  }
+} 
+
 /* ---- About ---- */
 
 .about {
-  margin: 13vh auto 10vh auto;
+  margin: 3.5rem auto 3.5rem auto;
 }
 
 /* ---- Films ---- */
 
 .films {
-  padding-top: 11vh;
-  padding-bottom: 10vh;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   background: rgba(211,211,211,.4);
 }
 
@@ -112,6 +119,8 @@ h2 {
 }
 
 /* ---- News ---- */
+
+/*Adding overlay to background images*/
 
 .news img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -150,8 +159,8 @@ h2 {
 /* ---- Reserve Ticket Section ---- */
 
 .reserve-tickets {
-  padding-top: 12vh;
-  padding-bottom: 10vh;
+  padding-top: 5rem;
+  padding-bottom: 3.5rem;
   background: rgba(211,211,211,.4);
 }
 
@@ -159,8 +168,8 @@ h2 {
 
 .call-to-action {
   color: white;
-  padding-top: 30vh;
-  padding-bottom: 20vh;
+  padding-top: 18rem;
+  padding-bottom: 8rem;
   background: url("../img/call-to-action-background.jpg");
   background-position: bottom;
   background-size: cover;
@@ -170,8 +179,8 @@ h2 {
 /* ---- Footer ---- */
 
 .footer {
-  padding-top: 15vh;
-  padding-bottom: 5vh;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   background: rgba(255,255,255,1);
 }
 
@@ -190,7 +199,29 @@ h2 {
 }
 
 .footer p {
-  margin-top: 7vh;
+  margin-top: 2rem;
+}
+
+/* Scroll to Top Button */
+
+#scrollTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /* CUSTOMIZE THE CAROUSEL

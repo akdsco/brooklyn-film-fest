@@ -1,17 +1,17 @@
+
 // "Main function to operate actions on website"
 $(function(){
 	
 	// Make collapsed menu close on click (Mobile Devices)
-	$('#my-navbar a').on('click', function() {
-            $('.navbar-collapse').collapse('hide');
-        });
 
-	// w3c solution to smooth scrolling
+	$('#my-navbar a').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+  });
 
   // Add scrollspy to <body>
-  $('body').scrollspy({target: "#my-navbar"});   
+  $('body').scrollspy({target: "#my-navbar"});
 
-  // Add smooth scrolling on all links inside the navbar
+  // Add smooth scrolling on all links inside container with id #my-navbar
   $("#my-navbar a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -25,13 +25,29 @@ $(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 400, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     }
   });
+
+  // Scroll Top Button Appearance
+
+  // When the user scrolls down 350px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+      document.getElementById("scrollTopBtn").style.display = "block";
+      $(document.getElementById("scrollTopBtn")).fadeIn(1000);
+    } else {
+      document.getElementById("scrollTopBtn").style.display = "none";
+    }
+  }
+
+
 });
 
 // Custom JavaScript to validate form input
@@ -52,4 +68,3 @@ $(function(){
     });
   }, false);
 })();
-

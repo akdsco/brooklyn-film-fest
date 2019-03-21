@@ -20,8 +20,6 @@
     <!-- jQuery Full -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script> -->
-
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
@@ -42,38 +40,32 @@
 });
   </script>
   <!-- TODO: Read about submodules on github -->
-  <!-- TODO: Mobile menu sticking together with brand, spread them apart -->
 
   <!-- Menu & Header -->
   <div class="container-fluid header">
     <div class="row">
-      <!-- <div class="col"> -->
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
-          <!-- <div> -->
-            <a href="#page-top"><img src="img/logo.png" width="49" height="57" alt=""></a>
-            <a class="navbar-brand ml-2">Brooklyn Film Festival</a>
-          <!-- </div> -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="my-navbar" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a href="#page-top"><img src="img/logo.png" width="49" height="57" alt=""></a>
+        <a class="navbar-brand ml-2">Brooklyn Film Festival</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="my-navbar" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
-          <div class="navbar navbar-collapse collapse justify-content-end" id="my-navbar">
-            <ul class="navbar-nav mt-2 mt-lg-0">
-              <li class="nav-item nav-pills">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item nav-pills">
-                <a class="nav-link" href="#films">Films</a>
-              </li>
-              <li class="nav-item nav-pills">
-                <a class="nav-link" href="#news">News</a>
-              </li>
-              <li class="nav-item nav-pills">
-                <a class="nav-link" href="#reserve-tickets">Tickets</a>
-              </li>
-            </ul>
-          </div>
-          <!-- </div> -->
-        </nav>
-      <!-- </div> -->
+        <div class="navbar navbar-collapse collapse justify-content-end" id="my-navbar">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item nav-pills">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item nav-pills">
+              <a class="nav-link" href="#films">Films</a>
+            </li>
+            <li class="nav-item nav-pills">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item nav-pills">
+              <a class="nav-link" href="#reserve-tickets">Tickets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
 
@@ -90,12 +82,14 @@
     </div>
   </div>
 
-  <div class="container">
+  <!-- Experimenting with fade in jQuery -->
+
+  <!-- <div class="container">
     <div class="menu">
       <button>Press</button>
       <div id="div1" href="" style="color: #333; display: none;">menu 1</div>
     </div>
-  </div>
+  </div> -->
   
   <!-- About Section -->
   <div class="container about">
@@ -114,57 +108,60 @@
   </div>
 
   <!-- Films Section-->
-  <div class="container films px-5">
-    <div class="row my-2">
-      <div class="col">
-        <h2 class="text-center">This year we will watch</h2>
+  <div class="films">
+    <div class="container px-5">
+      <div class="row my-2">
+        <div class="col">
+          <h2 class="text-center">This year we will watch</h2>
+        </div>
       </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-md-5">
-        <img class="img-fluid rounded mx-auto d-block" alt="Interstellar" src="img/films/interstellar.jpg" />
+      <div class="row my-4">
+        <div class="col-md-5">
+          <img class="img-fluid rounded mx-auto d-block" alt="Interstellar" src="img/films/interstellar.jpg" />
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-center mt-2 mb-1">Interstellar</h3>
+          <h6 class="text-center mb-2">Monday 05-08-2019</h6>
+          <p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.</p>
+        </div>
       </div>
-      <div class="col-md-7">
-        <h3 class="text-center mt-2 mb-1">Interstellar</h3>
-        <h6 class="text-center mb-2">Monday 05-08-2019</h6>
-        <p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.</p>
+      <div class="row my-4">
+        <div class="col-md-5">
+          <img class="img-fluid rounded mx-auto d-block" alt="La La Land" src="img/films/la-la-land.jpg"/>
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-center mt-2 mb-1">La La Land</h3>
+          <h6 class="text-center mb-2">Tuesday 06-08-2019</h6>
+          <p>Aspiring actress serves lattes to movie stars in between auditions and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars. But as success mounts, they are faced with decisions that fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
+        </div>
       </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-md-5">
-        <img class="img-fluid rounded mx-auto d-block" alt="La La Land" src="img/films/la-la-land.jpg"/>
+      <div class="row my-4">
+        <div class="col-md-5">
+          <img class="img-fluid rounded mx-auto d-block" alt="Bohemian Rhapsody" src="img/films/bohemian.jpg"/>        
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-center mt-2 mb-1">Bohemian Rhapsody</h3>
+          <h6 class="text-center mb-2">Wednesday 07-08-2019</h6>
+          <p>Movie based on the true story of Queen's journey from the start of the rock band to their now-legendary 1985 performance at the Live Aid concert in Wembley Stadium. The story chronicles lead singer Freddie Mercury's tempestuous journey from an outcast immigrant struggling to find his place in a rejecting society to his becoming a beloved and world-famous artist.</p>
+        </div>
       </div>
-      <div class="col-md-7">
-        <h3 class="text-center mt-2 mb-1">La La Land</h3>
-        <h6 class="text-center mb-2">Tuesday 06-08-2019</h6>
-        <p>Aspiring actress serves lattes to movie stars in between auditions and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars. But as success mounts, they are faced with decisions that fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
-      </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-md-5">
-        <img class="img-fluid rounded mx-auto d-block" alt="Bohemian Rhapsody" src="img/films/bohemian.jpg"/>        
-      </div>
-      <div class="col-md-7">
-        <h3 class="text-center mt-2 mb-1">Bohemian Rhapsody</h3>
-        <h6 class="text-center mb-2">Wednesday 07-08-2019</h6>
-        <p>Movie based on the true story of Queen's journey from the start of the rock band to their now-legendary 1985 performance at the Live Aid concert in Wembley Stadium. The story chronicles lead singer Freddie Mercury's tempestuous journey from an outcast immigrant struggling to find his place in a rejecting society to his becoming a beloved and world-famous artist.</p>
-      </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-md-5">
-        <img class="img-fluid rounded mx-auto d-block" alt="Intouchables" src="img/films/intouchables.jpg" />    
-      </div>
-      <div class="col-md-7">
-        <h3 class="text-center mt-2 mb-1">Intouchables</h3>
-        <h6 class="text-center mb-2">Thursday 07-08-2019</h6>
-        <p>In Paris, the aristocratic and intellectual Philippe is a quadriplegic millionaire who is interviewing candidates for the position of his career. Out of the blue, Driss cuts the line of candidates and brings a document from the Social Security and asks Phillipe to sign it to prove that he is seeking a job position so he can receive his unemployment benefit. Philippe challenges Driss, offering him a trial period of one month to gain experience helping him. Then Driss can decide whether he would like to stay with him or not. Driss accepts the challenge and moves to the mansion, changing the boring life of Phillipe and his employees.</p>
-  		<div id="news"></div>
+      <div class="row my-4">
+        <div class="col-md-5">
+          <img class="img-fluid rounded mx-auto d-block" alt="Intouchables" src="img/films/intouchables.jpg" />    
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-center mt-2 mb-1">Intouchables</h3>
+          <h6 class="text-center mb-2">Thursday 07-08-2019</h6>
+          <p>In Paris, the aristocratic and intellectual Philippe is a quadriplegic millionaire who is interviewing candidates for the position of his career. Out of the blue, Driss cuts the line of candidates and brings a document from the Social Security and asks Phillipe to sign it to prove that he is seeking a job position so he can receive his unemployment benefit. Philippe challenges Driss, offering him a trial period of one month to gain experience helping him. Then Driss can decide whether he would like to stay with him or not. Driss accepts the challenge and moves to the mansion, changing the boring life of Phillipe and his employees.</p>
+    		<div id="news"></div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- News Section -->
   <div class="news">
+    <div class="container">
     <div id="newsCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
@@ -218,6 +215,7 @@
         <span class="sr-only">Next</span>
       </a>
   	  <div id="reserve-tickets"></div>
+    </div>
     </div>
   </div>
 

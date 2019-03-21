@@ -58,6 +58,16 @@ h2 {
   background-color: #fff;
 }
 
+.navbar {
+  padding: .5rem 2rem;
+}
+
+@media (min-width: 1700px) {
+  .navbar {
+    padding: .5rem 5rem;
+  }
+}
+
 .nav-link.active {
 	color: #fff !important;
 }
@@ -93,7 +103,7 @@ h2 {
 }
 
 /* Adjusting Menu Header for smallest smartphones*/
-@media (max-width: 388px) {
+@media (max-width: 409px) {
   #page-top > div.container-fluid.header > div > nav > a.navbar-brand.ml-2 {
     display: none;
   }

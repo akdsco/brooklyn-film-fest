@@ -94,7 +94,7 @@ h2 {
 
 /* Adjusting Menu Header for smallest smartphones*/
 @media (max-width: 388px) {
-  #page-top > div.container-fluid.header > div > div > nav > div:nth-child(1) > span {
+  #page-top > div.container-fluid.header > div > nav > a.navbar-brand.ml-2 {
     display: none;
   }
 } 
@@ -253,4 +253,10 @@ h2 {
   .featurette-heading {
     margin-top: 7rem;
   }*/
+}
+
+@media (max-width: 768px) {
+  #my-navbar {
+    justify-content: center !important;
+  }
 }

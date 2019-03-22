@@ -132,10 +132,20 @@ h2 {
 /* ---- News ---- */
 
 /*Adding overlay to background images*/
-
 .news img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+@media (min-width: 1700px) {
+  #newsCarousel > div.carousel-inner > div:nth-child(3) > div {
+    padding: 0 10rem;
+  }
+}
+
+/*Full width container*/
+#page-top > div.news > div {
+  padding: 0px;
 }
 
 @media (max-width: 768px) {

@@ -11,17 +11,20 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
     <!-- jQuery Full -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JavaScript -->
     <script src="js/customJavaScript.js"></script>
@@ -33,6 +36,7 @@
   <body id="page-top">
 
   <script>
+    AOS.init();
     $(document).ready(function() {
     $("button").click(function() {
             $("#div1").fadeIn(1000);
@@ -94,7 +98,10 @@
   <!-- About Section -->
   <div class="container about">
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="1200"
+        data-aos-offset="0">
         <h2 class="text-center mb-3">About Us</h2>
         <h5 class="text-center my-2">We display quality films and organise the best social events.</h5>
         <p class="text-center" id="test">We are a group of 100 people who can't stop talking, living, breating and obviously watching films. Each year we celebrate with community of 15000 like minded people from Brooklyn and New York area, by displaying the best films and taking part in social activities together. Our events are mostly held in Venues around New York. 
@@ -112,44 +119,44 @@
     <div class="container">
       <div class="row my-2">
         <div class="col">
-          <h2 class="text-center">This year we will watch</h2>
+          <h2 class="text-center" data-aos="zoom-out-up">This year we will watch</h2>
         </div>
       </div>
       <div class="row my-4">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right">
           <img class="img-fluid rounded mx-auto d-block" alt="Interstellar" src="img/films/interstellar.jpg" />
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left">
           <h3 class="text-center mt-2 mb-1">Interstellar</h3>
           <h6 class="text-center mb-2">Monday 05-08-2019</h6>
           <p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.</p>
         </div>
       </div>
       <div class="row my-4">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right">
           <img class="img-fluid rounded mx-auto d-block" alt="La La Land" src="img/films/la-la-land.jpg"/>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left">
           <h3 class="text-center mt-2 mb-1">La La Land</h3>
           <h6 class="text-center mb-2">Tuesday 06-08-2019</h6>
           <p>Aspiring actress serves lattes to movie stars in between auditions and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars. But as success mounts, they are faced with decisions that fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
         </div>
       </div>
       <div class="row my-4">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right">
           <img class="img-fluid rounded mx-auto d-block" alt="Bohemian Rhapsody" src="img/films/bohemian.jpg"/>        
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left">
           <h3 class="text-center mt-2 mb-1">Bohemian Rhapsody</h3>
           <h6 class="text-center mb-2">Wednesday 07-08-2019</h6>
           <p>Movie based on the true story of Queen's journey from the start of the rock band to their now-legendary 1985 performance at the Live Aid concert in Wembley Stadium. The story chronicles lead singer Freddie Mercury's tempestuous journey from an outcast immigrant struggling to find his place in a rejecting society to his becoming a beloved and world-famous artist.</p>
         </div>
       </div>
       <div class="row my-4">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right">
           <img class="img-fluid rounded mx-auto d-block" alt="Intouchables" src="img/films/intouchables.jpg" />    
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left">
           <h3 class="text-center mt-2 mb-1">Intouchables</h3>
           <h6 class="text-center mb-2">Thursday 07-08-2019</h6>
           <p>In Paris, the aristocratic and intellectual Philippe is a quadriplegic millionaire who is interviewing candidates for the position of his career. Out of the blue, Driss cuts the line of candidates and brings a document from the Social Security and asks Phillipe to sign it to prove that he is seeking a job position so he can receive his unemployment benefit. Philippe challenges Driss, offering him a trial period of one month to gain experience helping him. Then Driss can decide whether he would like to stay with him or not. Driss accepts the challenge and moves to the mansion, changing the boring life of Phillipe and his employees.</p>
@@ -219,13 +226,20 @@
   <!-- Reserve Ticket Section -->
   <div class="container-fluid reserve-tickets">
     <div class="row justify-content-center">
-      <div class="col-md-6  text-center">
+      <div class="col-md-6  text-center" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1200">
         <h2>Reserve Your Tickets</h2>
         <h5 class="mt-3 mb-1">We can't wait to display our best movies. If you'd like to join us, reserve your tickets by filling in  simple form below.</h5>
         <p class="mb-4">All fields are required.</p>
       </div>
     </div>
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" 
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0" 
+      novalidate>
       <div class="row justify-content-center">
         <div class="col-10 col-md-8 col-lg-4">
           <label for="inputName">Full Name:</label>

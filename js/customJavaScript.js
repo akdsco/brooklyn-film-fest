@@ -1,4 +1,3 @@
-
 // "Main function to operate actions on website"
 $(function(){
 	
@@ -41,7 +40,7 @@ $(function(){
   function scrollFunction() {
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
       document.getElementById("scrollTopBtn").style.display = "block";
-      $(document.getElementById("scrollTopBtn")).fadeIn(1000);
+      // $(document.getElementById("scrollTopBtn")).fadeIn(1000);
     } else {
       document.getElementById("scrollTopBtn").style.display = "none";
     }
@@ -50,7 +49,7 @@ $(function(){
 
 });
 
-// Custom JavaScript to validate form input
+// Form validation
 (function() {
   'use strict';
   window.addEventListener('load', function() {

@@ -1,4 +1,5 @@
 // "Main function to operate actions on website"
+
 $(function(){
 	
 	// Make collapsed menu close on click (Mobile Devices)
@@ -8,6 +9,7 @@ $(function(){
   });
 
   // Add scrollspy to <body>
+
   $('body').scrollspy({target: "#my-navbar"});
 
   // Add smooth scrolling on all links inside container with id #my-navbar
@@ -40,7 +42,6 @@ $(function(){
   function scrollFunction() {
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
       document.getElementById("scrollTopBtn").style.display = "block";
-      // $(document.getElementById("scrollTopBtn")).fadeIn(1000);
     } else {
       document.getElementById("scrollTopBtn").style.display = "none";
     }
@@ -48,6 +49,8 @@ $(function(){
 
 
 });
+
+// Outside Main Function
 
 // Form validation
 (function() {

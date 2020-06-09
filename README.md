@@ -29,7 +29,7 @@ code validation that is done on client-side.
 ### Links
 
  - [Project Brief](https://github.com/akdsco/frontend-bootstrap-film-festival-website/blob/master/project_brief.md)
- - [Visit website](http://brooklyn-festival.ostrowski.co)
+ - [Live website](http://brooklyn-festival.akds.co)
 
 ### Skills Learned
 
